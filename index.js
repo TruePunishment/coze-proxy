@@ -7,7 +7,7 @@ app.use(cors()); // ✅ 允许所有来源的跨域访问
 app.use(express.json());
 
 const apiClient = new CozeAPI({
-  token: 'pat_vIoQ89JCpRMwB0e1j3dQUoIbeSVVcHGCiCV5ujUUe4pxhniBwemTUczk1Kyj46tQ',
+  token: 'process.env.COZE_API_TOKEN',
   baseURL: 'https://api.coze.cn'
 });
 
